@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+    width: 500px;
+}
+
+.item-img {
+    width: 400px;
+}
+
+.Win {
+    border: 5px solid greenyellow;
+}
+
+.Lose {
+    border: 5px solid red;
+}
+
+.Tie {
+    border: 5px solid black;
+}
