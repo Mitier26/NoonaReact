@@ -1,0 +1,22 @@
+body {
+    background: url(https://c4.wallpaperflare.com/wallpaper/968/865/313/weather-background-miui-8-minimal-wallpaper-thumb.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-box {
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+}
