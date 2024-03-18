@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back {
+    position: fixed;
+    width: 150vw;
+    height: 150vh;
+    background: url('https://cdn-icons-png.flaticon.com/512/6851/6851361.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+    animation: animate 60s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.score {
+    width: 80%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 4fr;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+    user-select: none;
+}
+
+.main {
+    /* width: 80%; */
+    border: 8px solid palevioletred;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 2em;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+button:hover {
+    scale: 1.2;
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+.box {
+    /* min-width: 90%; */
+    width: 40vw;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+.icons {
+    font-size: 15vw;
+}
+
+.승리 {
+    border: 5px solid greenyellow;
+}
+.패배 {
+    border: 5px solid red;
+}
+.비김 {
+    border: 5px solid blueviolet;
+}
