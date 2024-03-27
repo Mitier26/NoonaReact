@@ -59,11 +59,13 @@
     transition: 0.1s;
     margin-bottom: 15px;
 }
-.card img {
-    /* object-fit: cover; */
-}
 
 .card:hover {
     scale: 1.1;
     z-index: 1;
+}
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
 }

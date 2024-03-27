@@ -2,7 +2,6 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductAll from './page/ProductAll';
-import ProductDetail from './page/ProductDetail';
 import Login from './page/Login';
 import Navbar from './components/Navbar';
 import { useEffect, useState } from 'react';
@@ -30,7 +29,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<ProductAll />}></Route>
                 <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />}></Route>
-                <Route path="/detail:id" element={<PrivateRoute authenticate={authenticate} />}></Route>
+                <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate} />}></Route>
             </Routes>
         </div>
     );
