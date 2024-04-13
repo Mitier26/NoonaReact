@@ -1,17 +1,22 @@
 export const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 6,
-        slidesToSlide: 3, // optional, default to 1.
+    desktop1: {
+        breakpoint: { max: 3000, min: 1780 },
+        items: 8,
+    },
+    desktop2: {
+        breakpoint: { max: 1780, min: 1560 },
+        items: 7,
     },
     tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2,
-        slidesToSlide: 2, // optional, default to 1.
+        breakpoint: { max: 1560, min: 1220 },
+        items: 5,
     },
     mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        slidesToSlide: 1, // optional, default to 1.
+        breakpoint: { max: 1220, min: 700 },
+        items: 3,
+    },
+    mobile: {
+        breakpoint: { max: 700, min: 0 },
+        items: 2,
     },
 };

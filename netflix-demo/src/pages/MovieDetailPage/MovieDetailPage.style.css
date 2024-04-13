@@ -1,0 +1,16 @@
+* {
+    color: white;
+}
+
+.badge {
+    width: 130px;
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+.poster {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}

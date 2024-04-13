@@ -6,6 +6,7 @@ import Alert from 'react-bootstrap/Alert';
 import 'react-multi-carousel/lib/styles.css';
 import MovieCard from '../../common/MovieCard/MovieCard';
 import ReactPaginate from 'react-paginate';
+import { DropdownMenu } from './components/DropdownMenu';
 
 // 경로 2가지
 // nav바에서 클릭해서 접속 :  popular 보여줌
@@ -34,7 +35,7 @@ const MoviesPage = () => {
         <Container>
             <Row>
                 <Col lg={2} xs={12}>
-                    필터
+                    <DropdownMenu />
                 </Col>
                 <Col lg={8} xs={12}>
                     <Row>

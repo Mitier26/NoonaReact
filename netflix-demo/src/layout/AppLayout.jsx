@@ -25,8 +25,8 @@ const AppLayout = () => {
         <div className="bg-black min-vh-100">
             <Navbar expand="lg" className="bg-black">
                 <Container fluid>
-                    <Navbar.Brand className="text-white " href="#">
-                        Navbar
+                    <Navbar.Brand className="text-danger fw-bold" href="#">
+                        Netflix
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">

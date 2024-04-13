@@ -2,10 +2,13 @@ import React from 'react';
 import { usePopularMoviesQuery } from '../../../../hooks/usePopularMovies';
 import Alert from 'react-bootstrap/Alert';
 import './Banner.style.css';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
     // useQuery는 data를 반환한다.
     const { data, isLoading, isError, error } = usePopularMoviesQuery();
+    const navigate = useNavigate();
 
     if (isLoading) {
         <h1>Loading....</h1>;
@@ -25,6 +28,9 @@ const Banner = () => {
             <div className="text-white banner-text-area">
                 <h1>{data?.results[0].title}</h1>
                 <p>{data?.results[0].overview}</p>
+                <Button variant="outline-danger" onClick={() => navigate(`movies/${data?.results[0].id}`)}>
+                    Detail
+                </Button>
             </div>
         </div>
     );

@@ -2,10 +2,12 @@ import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 import './MovieCard.style.css';
 import { useMovieGenreQuery } from '../../hooks/useMovieGenre';
+import { useNavigate } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
     // data의 이름을 재정의 한다.
     const { data: genreData } = useMovieGenreQuery();
+    const navigate = useNavigate();
 
     const showGenre = (genreIdList) => {
         if (!genreData) return [];
@@ -22,6 +24,7 @@ const MovieCard = ({ movie }) => {
         <div
             style={{ backgroundImage: `url("https://www.themoviedb.org/t/p/w1280${movie.poster_path}")` }}
             className="movie-card"
+            onClick={() => navigate(`/movies/${movie.id}`)}
         >
             <div className="overlay">
                 <h1>{movie.title}</h1>
