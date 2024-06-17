@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  gap: 30px;
+}
+
+.box {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}
+
+.item-img {
+  width: 350px;
+  height: 350px;;
+}
+
+.Win {
+  border-color: greenyellow;
+}
+
+.Lose {
+  border-color: red;
+}
