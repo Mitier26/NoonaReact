@@ -1,0 +1,45 @@
+.login-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-section img {
+    width: 100px;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.menu-list li {
+    /* padding: 10px; */
+}
+
+.search-area {
+    position: absolute;
+    right: 20px;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.search-area input {
+    width: 200px;
+    /* font-size: 1.2em; */
+    outline: none;
+    border: none;
+}
