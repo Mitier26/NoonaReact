@@ -3,6 +3,7 @@
     justify-content: flex-end;
     margin-top: 10px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .nav-section {
@@ -33,13 +34,41 @@
     position: absolute;
     right: 20px;
     border-bottom: 3px solid black;
-    padding-bottom: 5px;
-    margin-top: 10px;
 }
 
 .search-area input {
-    width: 200px;
+    width: 100px;
     /* font-size: 1.2em; */
     outline: none;
     border: none;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card:hover {
+    scale: 1.1;
+}
+
+.product-row {
+    height: 500px;
+}
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
+    height: 500px;
+}
+
+.product-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-button {
+    width: 100%;
+    align-self: flex-end;
 }
