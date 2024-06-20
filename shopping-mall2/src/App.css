@@ -1,0 +1,36 @@
+
+.login-area {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo-area {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-area img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu-area ul {
+  display: flex;
+  list-style: none;
+  gap: 20px
+}
+
+.card {
+  width: 200px;
+}
+
+.card:hover {
+  scale:1.05;
+}
